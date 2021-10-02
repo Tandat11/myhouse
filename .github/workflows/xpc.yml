@@ -1,4 +1,4 @@
-name: Free RDP
+name: amazonRDP
 
 on: workflow_dispatch
 

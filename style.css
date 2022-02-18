@@ -1,0 +1,278 @@
+.container1 {
+  width: 100%;
+  height: auto;
+}
+
+.menu {
+  width: 100%;
+  height: 70px;
+  background-color: #3A70FF;
+}
+
+.up {
+  width: 100%;
+  height: 780px;
+}
+
+.login {
+  width: 275x;
+  height: 40px;
+  /*background-color: green;*/
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  border: 2px solid #009688;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span{
+	background: #009688;
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+	width: 100%;
+}
+
+button:hover{
+	border: none;
+}
+
+.body {
+  background-color: #B1322C00;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+nav{
+  background: #009688;
+  padding: 5px 40px
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #33ffff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: cyan;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #33ffff,
+                inset 0 0 10px #66ffff;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}
+.jhonsong{
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  color: #202020;
+}
+.jhonsong1{
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  z-index: -1;
+  text-align: center;
+  width: 45%;
+  color: #202020;
+}
+
+.jhonsong2{
+  position: absolute;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 30px;
+  top: 25%;
+  left: 50%;
+  height: 50px;
+  transform: translate(-50%, -10%);
+  z-index: -1;
+  text-align: center;
+  width: 220px;
+  color: #A4FFEF;
+}
+
+.jhonsong3{
+  position: absolute;
+  font-size: 15px;
+  line-height: 20px;
+  top: 37%;
+  left: 50%;
+  height: 50px;
+  transform: translate(-50%, -10%);
+  z-index: -1;
+  text-align: center;
+  width: 284px;
+  color: #919191;
+}
+.jhonsong4{
+  position: absolute;
+  font-size: 30px;
+  top: 120%;
+  line-height: 30px;
+  left: 50%;
+  height: 50px;
+  transform: translate(-50%, -10%);
+  z-index: -1;
+  text-align: center;
+  width: 220px;
+  color: #A4FFEF;
+}
+
+
+.card-body {
+  position: absolute;
+  width: 310px;
+  top: 70%;
+  left: 50%;
+  height: 900px;
+    transform: translate(-50%, -10%);
+  z-index: -1;
+  /*background-color: green;*/
+  text-align: center;
+}
+
+ .exampleanim {visibility:hidden;}
+.example {
+  animation-name: example;
+  -webkit-animation-name: example;
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+  visibility: visible;
+}
+
+@keyframes example {
+  0%  {
+  	opacity: 0;
+     transfom: translateY(90%);
+     }
+  100%   {
+  	opacity: 1;
+     transfom: translateY(0%);
+     }
+}
+
+@-webkit-keyframes example {
+  0%  {
+  	opacity: 0;
+     transfom: translateY(90%);
+     }
+  100%   {
+  	opacity: 1;
+     transfom: translateY(0%);
+     }
+}
+.logo {
+	position: absolute;
+	left: 4%;
+}
+
+.taigame{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  height: 50px;
+  transform: translate(-50%, -10%);
+
+}
